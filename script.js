@@ -4,6 +4,7 @@ var ChoiceA = document.getElementById("ABtn")
 var ChoiceB = document.getElementById("BBtn");
 var ChoiceC = document.getElementById("CBtn");
 var score = document.getElementById("score");
+var DQ = document.getElementById("DQ");
 var Sc = 0
 var questions = [
     {
@@ -52,8 +53,9 @@ var startTime = 300;
 var q = questions[currentquestion];
 var Displayed_q = document.createElement('p');
 Displayed_q.textContent = q.question;
-document.body.appendChild(Displayed_q);
+DQ.appendChild(Displayed_q);
 Displayed_q.style.display = "none";
+
 
 startBtn.addEventListener('click', function (event) {
     event.preventDefault();

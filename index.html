@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <title>Code Quiz</title>
 </head>
+
 <body>
-    
-<main id ="main">
-<h1>Code Quiz</h1>
-<h2 id = "timer"></h2>
-<p>When ready hit start to begin code quiz!</p>
-<div id = 'Qdisplay'>
-    <div class="choice" id ="ABtn" >A</div>
-    <div class="choice" id ="BBtn" >B</div>
-    <div class="choice" id ="CBtn" >C</div>
-    <input type="submit" value="start" id= "submit">
-</div>
-<p id = 'score'></p>
-</main>
+    <div class="container mr-auto">
+        <div class="row">
+            <div id="main" class="col-12 mr-auto text-center">
+                <h1>Code Quiz</h1>
+            </div>
+        </div>
+        <div class="row">
+            <h2 id="timer" class="col-12 mr-auto text-center"></h2>
+        </div>
+        <div class="row">
+            <div class="col-12 mr-auto text-center">
+                <p>When ready hit start to begin code quiz!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mr-auto text-center">
+                <div id="DQ" ></div>
+                <div class="choice" id="ABtn">A</div>
+                <div class="choice" id="BBtn">B</div>
+                <div class="choice" id="CBtn">C</div>
+                <input type="submit" value="start" id="submit">
+            </div>
+        </div>
+    </div>
+    <p id='score'></p>
+
 
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
