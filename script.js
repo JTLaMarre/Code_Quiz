@@ -1,3 +1,4 @@
+// dom vars
 var startBtn = document.getElementById("submit");
 var timer = document.getElementById("timer");
 var ChoiceA = document.getElementById("ABtn")
@@ -5,6 +6,8 @@ var ChoiceB = document.getElementById("BBtn");
 var ChoiceC = document.getElementById("CBtn");
 var score = document.getElementById("score");
 var DQ = document.getElementById("DQ");
+var startMSG = document.getElementById("startMSG");
+// Script vars index(currentquestion), score, quiz key
 var Sc = 0
 var questions = [
     {
@@ -47,6 +50,7 @@ var questions = [
 
 ]
 var questionIndex = questions.length - 1;
+
 var currentquestion = 0
 var startTime = 300;
 
@@ -61,7 +65,7 @@ startBtn.addEventListener('click', function (event) {
     event.preventDefault();
     DisplayQuestion()
     var quizInterval = setInterval(function () {
-        timer.textContent = startTime;
+        timer.textContent = startTime +"seconds";
         startTime--;
 
 
@@ -88,6 +92,7 @@ function Quiz(UserChoice) {
 }
 function DisplayQuestion() {
     startBtn.remove();
+    startMSG.remove();
     Displayed_q.style.display = "inline"
     ABtn.textContent = q.ChoiceA;
     BBtn.textContent = q.ChoiceB;

@@ -14,29 +14,33 @@
 <body>
     <div class="container mr-auto">
         <div class="row">
-            <div id="main" class="col-12 mr-auto text-center">
+            <div id="main" class="col-12 mr-auto text-center bg-danger text-white">
                 <h1>Code Quiz</h1>
             </div>
         </div>
         <div class="row">
-            <h2 id="timer" class="col-12 mr-auto text-center"></h2>
+            <h2 id="timer" class="col-12 mr-auto text-center bg-primary text-white"></h2>
         </div>
         <div class="row">
             <div class="col-12 mr-auto text-center">
-                <p>When ready hit start to begin code quiz!</p>
+                <p id= "startMSG">When ready hit start to begin code quiz!</p>
+                <input type="submit" value="start" id="submit" class = "btn btn-danger btn-large">
             </div>
         </div>
         <div class="row">
-            <div class="col-12 mr-auto text-center">
-                <div id="DQ" ></div>
-                <div class="choice" id="ABtn">A</div>
-                <div class="choice" id="BBtn">B</div>
-                <div class="choice" id="CBtn">C</div>
-                <input type="submit" value="start" id="submit">
+            <div class="col-12 mr-auto text-center bg-primary">
+                <h2 id="DQ" class="bg-primary text-white"></h2>
+                <div class="choice btn btn-success btn-small" id="ABtn">A</div>
+                <br>
+                <div class="choice btn btn-success btn-small " id="BBtn">B</div>
+                <br>
+                <div class="choicebtn btn btn-success btn-small" id="CBtn">C</div>
+                <br>
+                <p id='score' class="bg-primary text-white"></p>
+
             </div>
         </div>
     </div>
-    <p id='score'></p>
 
 
 
