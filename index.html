@@ -15,16 +15,20 @@
     <div class="container mr-auto">
         <div class="row">
             <div id="main" class="col-12 mr-auto text-center bg-danger text-white">
-                <h1>Code Quiz</h1>
+                <h1 id="title">Code Quiz</h1>
             </div>
         </div>
         <div class="row">
             <h2 id="timer" class="col-12 mr-auto text-center bg-primary text-white"></h2>
         </div>
         <div class="row">
-            <div class="col-12 mr-auto text-center">
-                <p id= "startMSG">When ready hit start to begin code quiz!</p>
-                <input type="submit" value="start" id="submit" class = "btn btn-danger btn-large">
+            <div class="col-12 mr-auto text-center bg-primary text-white">
+                <main id="startMSG">
+                    <p>When ready hit start to begin code quiz!</p>
+                    <p>incorrect answers will decrease your score and take a minute off your time!</p>
+                    <p>you have five minutes to finish!</p>
+                </main>
+                <input type="submit" value="start" id="submit" class="btn btn-danger btn-large">
             </div>
         </div>
         <div class="row">
@@ -37,7 +41,6 @@
                 <div class="choicebtn btn btn-success btn-small" id="CBtn">C</div>
                 <br>
                 <p id='score' class="bg-primary text-white"></p>
-
             </div>
         </div>
     </div>
